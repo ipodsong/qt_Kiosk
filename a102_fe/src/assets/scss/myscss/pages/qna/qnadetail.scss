@@ -1,0 +1,46 @@
+.detailPost {
+  height: 100%;
+  .detailPostButton {
+    .detailPostUpdateButton,
+    .detailPostDeleteButton,
+    .detailPostBackButton {
+      background-color: $oori-green;
+      color: white;
+      border: none;
+      font-size: small;
+      // border-radius: 20%;
+      display: inline-block;
+      float: right;
+    }
+  }
+  .card {
+    // border-color: $eat-key-color;
+    // border-width: 2px;
+    border: none;
+    .detailPostQHeader {
+      background-color: $oori-white;
+      color: $oori-green;
+      font-weight: bold;
+      span {
+        float: right;
+      }
+    }
+
+    .detailPostQBody {
+      height: 21vh;
+      overflow-y: auto;
+      // border-bottom: solid;
+      // border-color: $oori-green;
+    }
+
+    .detailPostAHeader {
+      background-color: $oori-white;
+      color: $oori-green;
+    }
+
+    .detailPostABody {
+      height: 21vh;
+      overflow-y: auto;
+    }
+  }
+}

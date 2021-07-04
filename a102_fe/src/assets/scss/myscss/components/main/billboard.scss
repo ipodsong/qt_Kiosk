@@ -1,0 +1,84 @@
+// .custom-tag {
+//   max-width: 100%;
+//   height: 100%;
+//   width: 100vh;
+//   background: white;
+//   .banner {
+//     width: 100%;
+//     height: 100%;
+//     a {
+//       display: block;
+//       width: 100%;
+//       height: 100%;
+//       img {
+//         display: block;
+//         width: 100%;
+//         height: 100%;
+//       }
+//     }
+//   }
+// }
+.billboard {
+  height: 60vh;
+  //   background-color: red;
+  .carousel-inner {
+    height: 60vh;
+    .custom-tag {
+      height: 100%;
+      .carouselItem {
+        height: 100%;
+      }
+      //   .banner > a {
+      //     display: block;
+      //     width: 100%;
+      //     height: 100%;
+      //     img {
+      //       width: 100%;
+      //       height: 100%;
+      //     }
+      //   }
+    }
+  }
+}
+.userrank {
+  //   display: inline;
+  background-image: url("../../../../images/awards.png");
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  overflow: hidden;
+  .userrankrank {
+    color: $oori-gray-pinstripe;
+    text-align: center;
+    line-height: 50px;
+  }
+  .userrankgood {
+    color: $oori-gray-pinstripe;
+    text-align: center;
+    line-height: 10px;
+    font-size: small;
+  }
+}
+
+.usertotal {
+  background-image: url("../../../../images/happpynew.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  //   vertical-align: middle;
+  overflow: hidden;
+  padding-top: 11vh;
+  word-break: keep-all;
+  .usertotaltotal {
+    color: $oori-gray-pinstripe;
+    text-align: center;
+  }
+}

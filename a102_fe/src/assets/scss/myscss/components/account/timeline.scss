@@ -1,0 +1,110 @@
+.vertical-timeline-element-icon {
+  background-color: $oori-green !important;
+}
+
+.timelinItem-grid {
+  // background-color: yellowgreen;
+  width: 100%;
+
+  // display: grid;
+  // grid-template-rows: 1fr 1fr 1fr auto;
+  // grid-template-columns: 1fr 1fr 1fr;
+}
+
+.timelineItem-title {
+  // grid-column: 1 / 3;
+  // grid-row: 1 / 1;
+  display: block;
+  font-size: medium;
+  // color: $oori-green;
+}
+
+// .timelineItem-subtitle {
+//   grid-column: 1 / 4;
+//   grid-row: 2 / 3;
+// }
+
+.timelineItem-time {
+  // grid-column: 4/ 4;
+  // grid-row: 1 / 1;
+  // font-size: 14px;
+  font-size: small;
+}
+
+.timelineItem-btn {
+  // grid-column: 4 / 4;
+  // grid-row: 2 / 2;
+  display: block;
+  // place-self: center center;
+}
+
+.timelineItem-message {
+  grid-column: 1 / 4;
+  grid-row: 3 / 3;
+}
+.timelineItem-btn {
+  Button {
+    font-size: small;
+    background-color: $oori-green;
+    border: none;
+    right: 0;
+    // float: right;
+    display: inline-block;
+
+    // width: 0.8rem;
+    // height: 0.8rem;
+
+    // padding: 0.75rem 1.25rem;
+    // border-radius: 10rem;
+    // text-transform: uppercase;
+    // font-size: 12pt !important;
+    // letter-spacing: 0.15rem;
+    // transition: all 0.3s;
+    // position: relative;
+    // overflow: hidden;
+    // z-index: 1;
+    // &:after {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   background-color: $oori-green;
+    //   // border-radius: 10rem;
+    //   z-index: -2;
+    // }
+    // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 0;
+    //   width: 0%;
+    //   height: 100%;
+    //   background-color: darken($oori-green, 40%);
+    //   transition: all 0.3s;
+    //   // border-radius: 10rem;
+    //   z-index: -1;
+    // }
+    // &:hover {
+    //   background-color: darken($oori-green, 5%);
+    //   &:after {
+    //     background-color: darken($oori-green, 5%);
+    //   }
+    // &:before {
+    //   width: 100%;
+    // }
+    // }
+  }
+}
+
+.profileTimeline {
+  // height: 40vh;
+
+  overflow-y: auto;
+
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

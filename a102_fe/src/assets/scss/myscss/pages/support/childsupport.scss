@@ -1,0 +1,146 @@
+.mainSupport {
+  .supportCategory {
+    .supportChildContentLeft {
+      Button {
+        color: white;
+        background-color: $oori-yellow;
+        border: none;
+      }
+    }
+    .categoryListBox {
+      .categoryListItem {
+        &.selectedChildCategoryListItem {
+          color: $oori-yellow;
+          font-weight: bold;
+          background-color: $oori-white;
+        }
+      }
+    }
+  }
+  .supportContent {
+    .supportBox {
+      .storeChildListBox {
+        height: 42%;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        // border-color: $oori-yellow;
+        // border-width: 2px;
+        // border-style: solid;
+        background-color: $oori-white;
+        margin-bottom: 3%;
+        .mapListItem {
+          align-items: center;
+          background-color: $oori-lucent-white;
+          width: 100%;
+          height: 7.5vh;
+          // &:hover {
+          //   cursor: pointer;
+          // }
+          p {
+            font-size: small;
+          }
+          Button {
+            float: right;
+            font-size: small;
+            background-color: $oori-yellow;
+            border: none;
+            opacity: 0.8;
+            color: black;
+          }
+        }
+        .nothingToShow {
+          font-size: small;
+        }
+      }
+      .storeChildSupportBox {
+        height: 42.5%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        // border-color: $oori-yellow;
+        // border-width: 2px;
+        // border-style: solid;
+        background-color: $oori-white;
+        margin-bottom: 3%;
+        .mapListItem {
+          align-items: center;
+          background-color: $oori-lucent-white;
+          width: 100%;
+          height: 7.5vh;
+          // &:hover {
+          //   cursor: pointer;
+          // }
+          p {
+            font-size: small;
+          }
+        }
+        .nothingToShow {
+          font-size: small;
+        }
+      }
+    }
+  }
+}
+
+// .mainSupport {
+//   height: 100%;
+//   .supportTitle {
+//     height: 7%;
+//     margin-bottom: 1%;
+//   }
+//   .supportContent {
+//     height: 93%;
+//     // 좌측 검색창 및 지도
+//     .supportContentLeft {
+//       height: 100%;
+//       Button {
+//         color: white;
+//         background-color: $oori-green;
+//         border: none;
+//       }
+//       #naverMap {
+//         height: 90%;
+//       }
+//     }
+//     .categoryListBox {
+//       height: 100%;
+//       // 카테고리 리스트 아이템 1개
+//       .categoryListItem {
+//         height: auto;
+//         // line-height: 2.5em;
+//         text-align: center;
+//         padding-top: 10px;
+//         padding-bottom: 10px;
+//         &.selectedCategoryListItem {
+//           background-color: $oori-green;
+//           color: $white;
+//         }
+//         &:hover {
+//           cursor: pointer;
+//           font-weight: bold;
+//         }
+//       }
+//     }
+//     .supportBox {
+//       height: 90%;
+//       .storeListBox {
+//         height: 100%;
+//         overflow-y: auto;
+//         border-color: $oori-green;
+//         border-width: 2px;
+//         border-style: solid;
+//         .mapListItem {
+//           border-bottom: 1px solid black;
+//           height: auto;
+//           &:hover {
+//             cursor: pointer;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

@@ -1,0 +1,93 @@
+.mainProfile {
+  height: 100%;
+
+  .profileHeader {
+  }
+  .profileHeaderButton {
+    background-color: $oori-green;
+    color: white;
+    border: none;
+    font-size: small;
+    // border-radius: 20%;
+    display: inline-block;
+    float: right;
+  }
+  .profileContent {
+    .profileInfo {
+      .userInfo {
+        .card {
+          border: none;
+          height: 22vh;
+        }
+        .userInfoHeader {
+          background-color: white;
+          color: $oori-green;
+          font-weight: bold;
+          Button {
+            font-size: small;
+            background-color: $oori-white;
+            border: none;
+            color: $oori-green;
+            float: right;
+          }
+        }
+        .userInfoBody {
+          .userInfoInput {
+            width: 90%;
+            font-size: small;
+            float: right;
+          }
+        }
+      }
+      .qnaInfo {
+        .card {
+          border: none;
+          height: 21vh;
+          width: 100%;
+          .qnaInfoHeader {
+            background-color: white;
+            color: $oori-green;
+            font-weight: bold;
+            .qbaInfoTitle {
+            }
+          }
+          .qnaInfoBody {
+            overflow-y: auto;
+            &::-webkit-scrollbar {
+              display: none;
+            }
+            p {
+              align-items: center;
+              vertical-align: middle;
+              font-size: small;
+            }
+            Button {
+              font-size: x-small;
+              background-color: $oori-white;
+              border: none;
+              color: $oori-green;
+              float: right;
+            }
+          }
+        }
+      }
+    }
+    .profileTimeline {
+      height: 44vh;
+      padding-left: 0;
+      .ProfileInfo {
+        height: 100%;
+        background-color: white;
+        font-weight: 400;
+        padding-top: 3%;
+        text-align: center;
+        vertical-align: middle;
+        align-items: center;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+  }
+}

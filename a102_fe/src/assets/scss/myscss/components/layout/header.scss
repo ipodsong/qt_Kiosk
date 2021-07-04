@@ -1,0 +1,64 @@
+#tempNav {
+  z-index: 100;
+  position: fixed;
+  Button {
+    font-size: small;
+    border: none;
+    // display: block;
+  }
+  .child {
+    background-color: $oori-yellow;
+  }
+  .supporter {
+    background-color: $oori-green;
+  }
+  .store {
+    background-color: $oori-gray;
+  }
+}
+
+// 상단 Navbar
+.mainHeader {
+  height: 22%;
+  background-color: $oori-brilliant-white;
+
+  .bigMapButton {
+    font-size: x-large;
+  }
+
+  // 회원 영역
+  .mainHeaderAuth {
+    font-size: small;
+  }
+
+  // 로고 영역
+  .mainHeaderLogo {
+    // height: 3%;
+    margin: 0;
+    padding: 0.5% 0%;
+    text-align: center;
+    img {
+      height: 8vh;
+    }
+  }
+
+  // Nav 영역
+  .mainHeaderNav {
+    text-align: center;
+  }
+
+  // 햄버거 영역
+  .navbar-toggler {
+    height: 100%;
+    padding: 0;
+    .navbar-toggler-icon {
+      height: 100%;
+      vertical-align: top;
+    }
+  }
+}
+
+.mainHeaderClose {
+  font-size: x-small;
+}
+// 상단 끝

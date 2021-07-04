@@ -1,0 +1,50 @@
+.createPost {
+  height: 100%;
+
+  .card {
+    border: none;
+    // height: 97%;
+
+    .createPostBody {
+      // height: 60%;
+      form {
+        // height: 55vh;
+        .qnaTitle {
+          // font-size: medium;
+        }
+        .createTitle {
+          // height: 5vh;
+          border: 1px solid $light-semi-gray;
+          &::-webkit-input-placeholder {
+            // _variables
+            font-size: $form-placeholder-font-size;
+            // font-size: x-small;
+            letter-spacing: $form-placeholder-letter-spacing;
+            font-weight: $form-placeholder-font-weight;
+          }
+        }
+        .cke_reset {
+          height: 31vh;
+          overflow: auto;
+          #cke_1_contents {
+            height: 19.4vh !important;
+            overflow: hidden;
+          }
+        }
+        .form-check {
+          margin-bottom: 0;
+        }
+      }
+
+      .createButton {
+        background-color: $oori-green;
+        color: white;
+        border: none;
+        font-size: small;
+        // border-radius: 43%;
+        display: inline-block;
+        float: right;
+      }
+    }
+  }
+}

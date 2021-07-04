@@ -1,0 +1,39 @@
+.whattoeat {
+  width: 100%;
+  height: 100%;
+  .childContent {
+    height: 100%;
+  }
+  .card {
+    height: 100%;
+    // height: 90%;
+    padding: 3%;
+    // height: 100%;
+    border: none;
+    background-color: $oori-bright-white;
+  }
+  .childimg {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .childwte {
+    text-align: center;
+    align-items: center;
+    h2 {
+      color: $oori-green;
+    }
+    .choosemenubutton {
+      background-color: $oori-white;
+      border: none;
+      margin: 3% 0%;
+      padding: 1%;
+    }
+    img {
+      width: 50%;
+      height: 50%;
+    }
+  }
+}

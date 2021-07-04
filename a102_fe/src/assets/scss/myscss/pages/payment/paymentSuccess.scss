@@ -1,0 +1,70 @@
+.paymentSuccessContainer {
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  img {
+    height: 50vh;
+    width: 50vh;
+  }
+  .paymentSuccessButton {
+    background-color: $oori-green;
+    color: white;
+    border: none;
+    font-size: small;
+    margin: 1%;
+  }
+}
+
+.loader-wrapper {
+  height: 100%;
+  width: 100%;
+  // background-image: url("../../../../images/handheart.png");
+  // min-height: 100%;
+  // background-position: center;
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   position: fixed;
+  background-color: $oori-white;
+  z-index: 1000;
+  top: 0;
+  .typewriter h1 {
+    color: $oori-gray-pinstripe;
+    overflow: hidden;
+    border-right: 0.15em solid $oori-green;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    font-size: 150%;
+    animation: typing 1s steps(30, end), blink-caret 0.5s step-end infinite;
+  }
+  img {
+    height: 5vh;
+    width: 5vh;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: $oori-green;
+    }
+  }
+}
+
+.loader-wrapper.loderhide {
+  display: none;
+}

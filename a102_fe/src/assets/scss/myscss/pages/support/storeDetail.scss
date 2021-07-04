@@ -1,0 +1,185 @@
+// .mainBox {
+//   height: 100%;
+//   .mainRow {
+//     height: 100%;
+//     .storeInfo {
+//       height: 100%;
+//       .storeInfoCard {
+//         height: 100%;
+//       }
+//     }
+//   }
+//   .storeMiniMap {
+//     height: 300px;
+//   }
+
+//   .findWayButton,
+//   .helpButton {
+//     border-top-left-radius: 0px;
+//     border-top-right-radius: 0px;
+//   }
+
+//   .storeStatusCard,
+//   .supportCartCard {
+//     padding: 5%;
+//     margin: 1%;
+//   }
+// }
+
+// .storeMenuDetail {
+//   height: 87vh;
+// }
+
+// .storeMenu {
+//   height: 100%;
+// }
+
+// .storeMenuItemList {
+//   overflow-y: auto;
+// }
+
+// .storeMenuItem {
+//   border: 1px solid black;
+// }
+
+// .storeStatus {
+//   height: 95%;
+//   overflow-y: auto;
+// }
+
+// .storeStatusItem {
+//   border: 1px solid blue;
+//   height: 10%;
+// }
+
+.mainStoreDetail {
+  height: 100%;
+  // 좌측 매장 상세정보 + 지도
+  .storeInfo {
+    height: 60vh;
+    .storeInfoCard {
+      border: none;
+      .cardHeader {
+        background-color: white;
+        color: $oori-green;
+      }
+      height: 100%;
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .caution {
+        font-size: x-small;
+      }
+      .card-body {
+        #storeMiniMap {
+          height: 50%;
+        }
+        .findWayButton {
+          margin-bottom: 5px;
+          font-size: small;
+          color: white;
+          background-color: $oori-green;
+          border: none;
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px;
+        }
+      }
+    }
+  }
+
+  // 우측 메뉴 정보 + 매장 후원현황
+  .storeMenuDetail {
+    height: 60vh;
+    // 중앙 메뉴 정보
+    .storeCenterBox {
+      .card {
+        border: none;
+        height: 60vh;
+        .cardHeader {
+          background-color: white;
+          color: $oori-green;
+        }
+        .card-body {
+          overflow-y: auto;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          .information {
+            font-size: small;
+            margin-bottom: 0;
+          }
+          .cartbutton {
+            background-color: $oori-white;
+            border: none;
+            color: $oori-green;
+          }
+        }
+      }
+    }
+    // 우측 후원정보
+    .storeRightBox {
+      height: 100%;
+      .card {
+        height: 60vh;
+        border: none;
+        .cardHeader {
+          background-color: white;
+          color: $oori-green;
+        }
+        .supportCart {
+          height: 100%;
+        }
+        .supportCartCard {
+          overflow-y: auto;
+          font-size: medium;
+          .supportCartItem {
+            // display: flex;
+            align-items: center;
+            .cartItemName {
+              // display: inline;
+            }
+            p {
+              display: inline;
+            }
+            .controlbuttons {
+              // float: right;
+              // justify-content: space-between;
+              border-radius: 0;
+              // display: inline;
+              .controlbutton {
+                font-size: small;
+                background-color: $oori-white;
+                border: none;
+                color: $oori-green;
+              }
+              .deletebutton {
+                font-size: small;
+                background-color: $oori-white;
+                border: none;
+                color: red;
+              }
+              .countbutton {
+                font-size: small;
+                background-color: white;
+                border: none;
+                color: $oori-green;
+              }
+            }
+          }
+        }
+        .supportCartFooter {
+          background-color: white;
+          p {
+            text-align: center;
+          }
+          .footerbutton {
+            color: $oori-white;
+            border: none;
+            background-color: $oori-green;
+          }
+        }
+      }
+    }
+  }
+}

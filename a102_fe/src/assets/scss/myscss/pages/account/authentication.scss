@@ -1,0 +1,181 @@
+/*======= Page Header css Start ======= */
+.mainBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-wrapper {
+  .page-main-header {
+    background-color: $main-header-bg-color;
+    position: $main-header-position;
+    top: $main-header-top;
+    z-index: $main-header-z-index;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: $sidebar-transition;
+    .main-header-left {
+      padding-left: 30px;
+    }
+  }
+  .page-body-wrapper {
+    background-color: $white;
+    .page-body {
+      // min-height: calc(100vh - #{$header-size});
+      // margin-top: $header-size;
+      padding: $page-body-padding;
+      position: relative;
+      background-color: $light;
+      margin-left: $page-body-width;
+      transition: 0.6s;
+      > div {
+        > div {
+          &.zoomout-enter-done {
+            animation: zoomOut 1000ms ease-in-out;
+          }
+          &.slidefade-enter-done {
+            animation: slideInLeft 1000ms ease-in-out;
+          }
+          &.fade-enter-done {
+            animation: fadeIn 1000ms ease-in-out;
+          }
+          &.fadebottom-enter-done {
+            animation: fadeInDown 1000ms ease-in-out;
+          }
+          &.slidefade-enter,
+          &.slidefade-exit,
+          &.fade-enter,
+          &.fade-exit,
+          &.zoomout-enter,
+          &.zoomout-exit,
+          &.fadebottom-enter,
+          &.fadebottom-exit,
+          &.none-enter-done,
+          &.none-enter,
+          &.none-exit {
+            animation: unset;
+          }
+        }
+      }
+    }
+  }
+}
+/*======= Page Header css ends  ======= */
+
+.authentication-main {
+  .auth-innerright {
+    .card-body {
+      &:before {
+        height: 100%;
+      }
+      &:after {
+        height: 120vh;
+      }
+      // .theme-form {
+      //   width: calc(100% - 290px);
+      // }
+    }
+    .authentication-box {
+      display: flex;
+      align-items: center;
+
+      &:before {
+        height: 100%;
+      }
+      &:after {
+        height: 120vh;
+      }
+    }
+  }
+}
+
+.theme-form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  .row {
+    div[class^="col-"] {
+      + div[class^="col-"] {
+        .select2-container {
+          margin-top: 14px;
+          max-width: 100%;
+        }
+      }
+      .job-select2 {
+        ~ .select2-container {
+          margin-top: 0 !important;
+        }
+      }
+      .input-group {
+        .datepicker-here {
+          font-size: 14px;
+          border: 1px solid $light-color;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+  .rbt {
+    input {
+      border-radius: 15px;
+    }
+    .rbt-menu {
+      li {
+        display: inline;
+      }
+    }
+  }
+  input[type="file"] {
+    height: calc(2.25rem + 5px);
+  }
+}
+
+.login-divider {
+  position: relative;
+  clear: both;
+  height: 0;
+  margin: 30px 0;
+  border-top: 1px solid $light-semi-gray;
+  &:before {
+    position: absolute;
+    top: -11px;
+    left: 40%;
+    margin-left: -10px;
+    padding: 0 5px;
+    color: $theme-font-color;
+    background: $white;
+    content: "간편하게 로그인하기";
+  }
+}
+
+.naverAuthBtn {
+  height: 36px;
+  cursor: pointer;
+}
+
+.checkPopup {
+  .modal-header {
+    img {
+      height: 70px;
+      width: 70px;
+    }
+    justify-content: center;
+  }
+  .modal-body {
+    font-size: small;
+    // text-align: center;
+  }
+  .modal-footer {
+    justify-content: center;
+    .AgreeButton {
+      border: none;
+      background-color: $oori-green;
+      font-size: small;
+    }
+    .NoButton {
+      border: none;
+      background-color: $oori-gray-pinstripe;
+      font-size: small;
+    }
+  }
+}

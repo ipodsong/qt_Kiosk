@@ -1,0 +1,142 @@
+.createPost {
+  .card {
+    .createPostBody {
+      .createMenuButton {
+        background-color: $oori-gray-pinstripe;
+        color: white;
+        border: none;
+        font-size: small;
+        // border-radius: 43%;
+        display: inline-block;
+        float: right;
+      }
+      .deletePhotoButton {
+        background-color: $oori-gray-pinstripe;
+        color: white;
+        border: none;
+        font-size: small;
+        // border-radius: 43%;
+        display: inline-block;
+        //   float: right;
+      }
+    }
+  }
+}
+
+.storeAdminContainer {
+  height: 100%;
+  .storeInfo {
+    height: 60vh;
+    .storeInfoCard {
+      border: none;
+      .cardHeader {
+        background-color: white;
+        color: $oori-gray-pinstripe;
+      }
+      height: 100%;
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .caution {
+        font-size: x-small;
+      }
+      .card-body {
+        #storeMiniMap {
+          height: 50%;
+        }
+        .findWayButton {
+          margin-bottom: 5px;
+          color: white;
+          background-color: $oori-gray-pinstripe;
+          font-size: small;
+          border: none;
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px;
+        }
+      }
+    }
+  }
+  .storeMenuList {
+    height: 60vh;
+    .storeSupportListContainer {
+      border: none;
+      height: 60vh;
+      .card-header {
+        background-color: white;
+        color: $oori-gray-pinstripe;
+        .menuCreateButton {
+          background-color: $oori-gray-pinstripe;
+          color: white;
+          border: none;
+          font-size: small;
+          display: inline-block;
+          float: right;
+        }
+        .menuDateButtons {
+          display: justify-center;
+          .menuDateButton {
+            background-color: $oori-gray-pinstripe;
+            color: white;
+            border: none;
+            font-size: small;
+          }
+        }
+        .form-group {
+          text-align: center;
+          label {
+            font-size: small;
+            background-color: $oori-white;
+            color: $oori-gray-pinstripe;
+          }
+          input {
+            font-size: small;
+          }
+        }
+      }
+      .card-body {
+        align-items: center;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        .storeMenuItem {
+          align-items: center;
+          .menuButtons {
+            .menuButton {
+              color: $oori-gray-pinstripe;
+              border: none;
+              background-color: $oori-white;
+              font-size: small;
+            }
+          }
+          .information {
+            color: $oori-gray-pinstripe;
+            font-size: small;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .contribution {
+      align-items: center;
+      .contributionName {
+        font-size: small;
+        font-weight: 600;
+      }
+      .contributionAvailable {
+        font-size: small;
+        font-weight: bold;
+        color: rgb(240, 35, 35);
+      }
+      .contributionCount {
+        font-weight: 450;
+        font-size: small;
+        background-color: $oori-bright-white;
+        opacity: 0.8;
+        text-align: center;
+        color: $oori-gray-pinstripe;
+      }
+    }
+  }
+}

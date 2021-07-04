@@ -1,0 +1,158 @@
+.mainSupport {
+  height: 100%;
+  // .supportTitle {
+  //   h3 {
+  //     margin-bottom: 0;
+  //     color: $oori-gray-pinstripe;
+  //   }
+  //   height: 7%;
+  //   margin-bottom: 1%;
+  //   background-color: $oori-lucent-white;
+  //   border-bottom: solid $oori-green;
+  //   padding: 0.5% 2%;
+  // }
+  .supportCategory {
+    height: 10%;
+    align-items: center;
+    Button {
+      color: white;
+      background-color: $oori-green;
+      border: none;
+    }
+    .categoryListBox {
+      align-items: center;
+      height: 100%;
+      display: flex;
+      // 카테고리 리스트 아이템 1개
+      // display: inline;
+      // vertical-align: middle;
+      .categoryListItem {
+        // line-height: 1.5;
+        display: inline-block;
+        vertical-align: middle;
+        width: auto;
+        text-align: center;
+        font-size: small;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        white-space: pre-line;
+        &.selectedCategoryListItem {
+          color: $oori-green;
+          font-weight: bold;
+          background-color: $oori-white;
+        }
+        &:hover {
+          cursor: pointer;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .supportContent {
+    height: 80%;
+    padding: 1% 0%;
+    // 좌측 지도
+    .supportContentLeft {
+      height: 98%;
+      #naverMap {
+        height: 100%;
+      }
+    }
+    .categoryMiniListBox {
+      margin-top: 5%;
+      align-items: center;
+      display: flex;
+      // 카테고리 리스트 아이템 1개
+      // display: inline;
+      // vertical-align: middle;
+      .categoryMiniListItem {
+        // line-height: 1.5;
+        display: inline-block;
+        vertical-align: middle;
+        width: auto;
+        text-align: center;
+        font-size: small;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        white-space: pre-line;
+        &.selectedCategoryMiniListItem {
+          color: $oori-green;
+          font-weight: bold;
+          background-color: $oori-white;
+        }
+        &:hover {
+          cursor: pointer;
+          font-weight: bold;
+        }
+      }
+    }
+    // 우측 가게목록
+    .supportBox {
+      height: 92%;
+      color: $oori-gray-pinstripe;
+      .storeListBox {
+        height: 99.5%;
+        overflow-y: auto;
+        display: flex;
+        align-items: start;
+        justify-content: flex-start;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        // border-color: $oori-green;
+        // border-width: 0.5px;
+        // border-style: solid;
+        background-color: $oori-white;
+        .mapListItem {
+          align-items: center;
+          background-color: $oori-lucent-white;
+          width: 100%;
+          height: 7.5vh;
+          // &:hover {
+          //   cursor: pointer;
+          // }
+          p {
+            font-size: small;
+          }
+          Button {
+            // float: right;
+            font-size: small;
+            background-color: $oori-green;
+            border: none;
+            opacity: 0.7;
+          }
+        }
+        .nothingToShow {
+          font-size: small;
+        }
+      }
+    }
+    .categoryListBox {
+      align-items: center;
+      display: flex;
+      // 카테고리 리스트 아이템 1개
+      // display: inline;
+      // vertical-align: middle;
+      .categoryListItem {
+        // line-height: 1.5;
+        display: inline-block;
+        vertical-align: middle;
+        width: auto;
+        text-align: center;
+        font-size: small;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        white-space: pre-line;
+        &.selectedCategoryListItem {
+          color: $oori-green;
+          font-weight: bold;
+          background-color: $oori-white;
+        }
+        &:hover {
+          cursor: pointer;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
