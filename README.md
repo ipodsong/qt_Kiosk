@@ -5,10 +5,6 @@
 
 ## 0. Why React?
 
-> 이부분은 조금 더 정리를 해봐야할듯
-
-0. 그냥 리액트해보고 싶어서 하자고 한건데
-
 1. React는 JSX = JavaScript XML, Vue는 Template
    1. `const example=<h1>This is Example</h1>`
    2. 같은 페이지이지만 사용자에 따라 조금은 다른 화면을 출력해야한다.
@@ -64,7 +60,6 @@ REACT_APP_STORE_TOKEN={테스트용 매장 JWT 값}
 
 ## 2. FrontEnd 폴더 구조
 
-> 이 부분은 지워도 될듯... TMI인듯...
 
 - node_modules : node 모듈 폴더로 `npm install`시 생성된다.
 - public : React 기본 폴더로 `public/index.html`을 통해 SPA 렌더링
