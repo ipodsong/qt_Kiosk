@@ -1,0 +1,24 @@
+html, body{
+	position: relative;
+	width: 98%;
+	height: 98%;
+    background-color: rgba(0, 0, 0, 0.013);
+    font-family: "Source Sans Pro", sans-serif;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iframe-container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.iframe-option{
+	width: 50%;
+	height: 50%;
+}

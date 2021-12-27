@@ -1,0 +1,1375 @@
+html, body{
+	position: relative;
+	width: 100%;
+	height: 100%;
+			/* 다크 테마에서 라이트 테마로 바꿔보았습니다! */
+			background-color: rgba(0, 0, 0, 0.013);
+	/* background-color: #34383c; */
+}
+
+li{
+	background-color: #f5b601 !important;
+}
+
+.carousel-container{
+	width: 70%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.carousel{
+	width: 80%;
+	height: 100%;
+}
+
+.carousel-inner{
+	width: 100%;
+	height: 100%;
+}
+.carousel-item{
+	width: 100%;
+	height: 100%;
+}
+
+/* 여기는 메뉴 화면 관련 CSS가 모여 있습니다 */
+
+.bookmark-container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	/* 북마크 박스의 마진을 없애는 대신 justify-content를 이용해 간격을 줄게요 */
+	justify-content: space-between;
+	/* 상하는 꽉 차게 늘려졸게요! 물론 height 줬긴 하지만 */
+	align-content: flex-start;
+	/* 넘기는 버튼이 분리되는 느낌을 주지 않도록 패딩을 살짝 줄여보겠습니다! */
+	padding: 20px 20px;
+	/* padding: 50px 50px; */
+	position: relative;
+	width: 100%;
+	height: 100%;
+			/* 다크 테마에서 라이트 테마로 바꿔보았습니다! */
+			background-color: rgba(0, 0, 0, 0.013);
+	/* background-color: #34383c; */
+}
+
+li{
+	background-color: #f5b601 !important;
+}
+
+.carousel-container{
+	width: 70%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.carousel{
+	width: 80%;
+	height: 100%;
+}
+
+.carousel-inner{
+	width: 100%;
+	height: 100%;
+}
+.carousel-item{
+	width: 100%;
+	height: 100%;
+}
+
+/* 여기는 메뉴 화면 관련 CSS가 모여 있습니다 */
+
+.bookmark-container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	/* 북마크 박스의 마진을 없애는 대신 justify-content를 이용해 간격을 줄게요 */
+	justify-content: space-between;
+	/* 상하는 꽉 차게 늘려졸게요! 물론 height 줬긴 하지만 */
+	align-content: flex-start;
+	/* 넘기는 버튼이 분리되는 느낌을 주지 않도록 패딩을 살짝 줄여보겠습니다! */
+	padding: 20px 20px;
+	/* padding: 50px 50px; */
+}
+
+.bookmark{
+	width: 49%;
+	height: 24%;
+
+	margin: 3px;
+	/* background-color: #eff2f8; */
+	background-color: white;
+
+	display: grid;
+	grid-template-rows: repeat(12, 1fr);
+	grid-template-columns: repeat(12, 1fr);        
+	
+}
+.bookmark-photo{
+	grid-row: 1 / 11;
+	grid-column: 1 / 5;
+	
+	overflow: hidden;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	/* background-color: #23417c; */
+	/* border: 1px #000000 solid; */
+	border-radius: 20px;
+	padding: 27px 9px 9px;
+	/* margin-bottom: 5px; */
+}
+.bookmark-title{
+	padding-left: 5px;
+	grid-row: 1 / 4;
+	grid-column: 5 / 11;
+	/* background-color: #7c2370; */
+	
+	display: flex;
+	align-items: flex-end;
+	
+	font-size: 25px;
+	font-weight: 700;
+	color: #000000;
+}
+.bookmark-badge{
+	grid-row: 1 / 4;
+	grid-column: 11 / 13;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color:salmon;
+	font-size: smaller;
+	/* background-color: #7c2323; */
+}
+.bookmark-dividing{
+	grid-row: 4 / 5;
+	grid-column: 5 / 13;
+
+	display: flex;
+	align-self: center;
+	
+	height: 1px;
+
+	margin-left: 5px;
+	margin-right: 5px;
+
+	background-color: slategrey;
+
+	background-clip: content-box;
+}
+
+.bookmark-detail{
+	grid-row: 5 / 11;
+	grid-column: 5 / 10;
+	padding-left: 5px;
+	padding-bottom: 9px;
+	
+	/* background-color: #7c7623; */
+	
+	font-size: 12px;
+	font-weight: 200;
+	color: #000000;
+}
+
+.bookmark-btn1{
+	grid-row: 5 / 11;
+	grid-column: 10 / 13;
+	
+	margin: 10px;
+	border-radius: 7px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	text-align: center;
+
+	background-color: #f5b601;
+	vertical-align: middle;
+	/* background-clip: content-box; */
+}
+
+.bookmark-contribution{
+	grid-row: 11 / 13;
+	grid-column: 4 / 13;
+	padding-left: 5px;
+	
+	display: flex;
+	align-items: flex-start;
+	
+	/* background-color: #7c234c; */
+	/* font-size: 20px;
+	font-weight: 700; */
+	color: #000000;
+}
+
+.bookmark-contribution-title{
+	grid-row: 11 / 13;
+	grid-column: 1 / 4;
+	
+	padding-left: 9px;
+
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	
+	/* background-color: #7c7623; */
+	font-size: 15px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.bookmark:hover{
+	cursor: pointer;
+}
+
+.bookmark-image-layout{
+	/* radius 20px, color #eff2f8  size 50px*/
+	/* 세로 가운데 배치 */
+	display: flex;
+	align-items: center;
+			width: 80%;
+			height: 50%;
+	background-color: #eff2f8;
+	border: 1px #000000 solid;
+	border-radius: 20px;
+	padding: 9px;
+	margin-bottom: 5px;
+}
+
+.bookmark-image{
+	/* size 28px */
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 1px #eff2f8 solid;
+			border-radius: 7px;
+			background-color: rgba(188, 143, 143, 0.568);
+
+}
+
+/* 여기까지가 메뉴 화면 관련된 CSS 입니다. */
+
+/* 여기는 장바구니 관련 CSS가 모여 있습니다 */
+
+.cart-container{
+	height: 100%;
+	width: 30%;
+	padding: 20px;
+}
+
+.cart-inner{
+	height: 100%;
+	width: 100%;
+
+	/* border: black;
+	border-style: solid;
+	border-width: 1.5px; */
+
+	background-color: white;
+	box-shadow: 10px 10px 30px #0008084f;
+
+	display: grid;
+	grid-template-rows: 2fr 6fr 2fr 2fr 1fr;
+	grid-template-columns: 1fr 6fr 1fr;
+
+}
+
+.cart-title{
+	grid-row: 1 / 2;
+	grid-column: 2 / 3;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 30px;
+
+}
+.cart-body{
+	/* 전체 장바구니 구역에서 이 div가 차지하는 공간입니다. */
+	grid-row: 2 / 3;
+	grid-column: 2 / 3;
+
+	border-color: rgba(47, 79, 79, 0.6);
+	border-top-style: solid;
+	border-top-width: 1px;
+
+	/* padding: 3% 0%; */
+
+	/* 이 div 내에는 개별 주문내역들이 쌓일 예정입니다.
+		 몇 개의 요소가 들어올지 가변적이므로, grid가 아닌 flex로 처리할게요. */
+	display: flex;
+	/* 장바구니에 들어온 아이템들은 메인축을 수직으로 쌓고요 */
+	flex-direction: column;
+	/* 맨 위부터 차례로 쌓일 예정이므로 메인축 시작지점부터 쌓기 */
+	justify-content: flex-start;
+	/* 수직축-여기에서는 수평축 좌우로 stretch 처리 */
+	align-items: center;
+
+	/* 아이템이 목록 갯수를 넘어가면 스크롤로 처리하겠습니다! */
+	overflow: auto;
+
+}
+.cart-item{
+	width: 100%;
+	height: 8.5vh !important;
+	padding: 1% 0%;
+	/* background-color: rgba(210, 105, 30, 0.322); */
+
+	border-bottom: rgba(47, 79, 79, 0.3) solid 1px;
+
+	display: grid;
+	grid-template-rows: 11fr 10fr;
+	grid-template-columns: 2fr 7fr 3fr;
+}
+
+.cart-item-available{
+	grid-row: 1 / 3 ;
+	grid-column: 1 / 2 ;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cart-item-title{
+	grid-row: 1 / 2 ;
+	grid-column: 2 / 3 ;
+
+	padding-left: 10px;
+
+	display: flex;
+	align-items: flex-end;
+
+	font-size: 16px;
+}
+.cart-item-cost{
+	grid-row: 2 / 3;
+	grid-column: 2 / 3;
+
+	padding-left: 10px;
+
+	display: flex;
+	align-items: flex-start;
+
+	font-size: 12px;
+
+}
+.cart-item-quantity{
+	grid-row: 1 / 3;
+	grid-column: 3 / 4;
+
+	margin: 10% 5%;
+
+	font-size: 16px;
+	font-weight: 900;
+
+	/* 내부에 더하기빼기를 구현해봅니다 */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	/* 칸처럼 보이도록 모양도 예쁘게 잡아볼게요 */
+	background-color: rgb(202, 202, 202);
+	border-radius: 10%;
+	border-width: 5px;
+	border-style: solid;
+	border-color:rgb(202, 202, 202);
+}
+.cart-item-quantity-btn{
+	height: 100%;
+	width: 30%;
+			
+	background-color: white;
+	border-radius: 10%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.money-box{
+	grid-row: 3 / 4;
+	grid-column: 2 / 3;
+
+	border-top: rgba(47, 79, 79, 0.3) solid 1px;
+
+	padding: 0% 10%;
+}
+
+.money-box-item{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+	
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.button-container{
+	grid-row : 4 / 5;
+	grid-column: 2 / 3;
+
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+}
+
+.button-reset{
+	height: 95%;
+	width: 100%;
+	background-color: rgb(202, 202, 202);
+	border: none;
+	color:#fff;
+	padding: 15px 0;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 35px;
+	margin: 4px;
+	cursor: pointer;
+}
+
+.button-pay{
+	height: 95%;
+	width: 100%;
+	background-color: #f5b601;
+	border: none;
+	color:#fff;
+	padding: 15px 0;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 35px;
+	margin: 4px;
+	cursor: pointer;
+}
+
+/* 여기까지가 장바구니 관련된 CSS 입니다. */
+
+/* 여기는 기부하기 화면 CSS 입니다 */
+.donation-container{
+	width: 70%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.donation-wrapper {
+    width: 100%;
+    /* 장바구니와 같은 선으로 맞춰줍니다 */
+    height: 100%;
+    padding: 20px;
+
+
+	display: grid;
+
+	grid-template-rows: 2fr 1fr 3fr;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+.donation-items {
+    height: 100%;
+    width: 100%;
+
+    grid-row: 3 / 4;
+    grid-column: 2 / 8;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.cart-body{
+	/* 전체 장바구니 구역에서 이 div가 차지하는 공간입니다. */
+	grid-row: 2 / 3;
+	grid-column: 2 / 3;
+
+	border-color: rgba(47, 79, 79, 0.6);
+	border-top-style: solid;
+	border-top-width: 1px;
+
+	padding: 3% 0%;
+}
+
+.donation-bookmark{
+    /* 전체 카루젤 대비 이전 화면의 각 메뉴 크기에 거의 근접하도록 맞춰 설정했습니다 */
+	width: 78%;
+	height: 49%;
+
+    background-color: white;
+    box-shadow: 3px 3px 5px #0008084f;
+
+
+	display: grid;
+	grid-template-rows: repeat(12, 1fr);
+	grid-template-columns: repeat(12, 1fr);
+}
+
+.donation-bookmark .bookmark-btn1{
+	background-color: #84BD00;
+}
+
+.donation-explain {
+    height: 100%;
+    width: 100%;
+
+    grid-row: 1 / 2;
+    grid-column: 2 / 12;
+
+}
+
+.donation-phone {
+    height: 100%;
+    width: 100%;
+
+    grid-row: 2 / 3;
+    grid-column: 2 / 12;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    line-height: 22px;
+
+}
+
+.donation-phone p {
+    margin: 0;
+}
+
+
+.donation-phone input {
+     padding: 15px;
+     width: 100%;
+
+     text-align: center;
+
+     font-size: 16px;
+     border-width: 5px;
+     border-color: #f5b601;
+     background-color: #FFFFFF;
+     color: #000000;
+     border-style: solid;
+     border-radius: 50px;
+     box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+     text-shadow: 0px 0px 5px rgba(66,66,66,.0);
+}
+.donation-phone input:focus {
+    outline:none;
+}
+.donation-phone input::placeholder {
+    text-align: center;
+}
+
+.donation-others {
+    height: 100%;
+    width: 100%;
+
+    grid-row: 3 / 4;
+    grid-column: 8 / 12;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donation-button {
+	height: 250px;
+	width: 250px;
+	border-radius: 125px;
+
+	background-color: #84BD00;
+
+	border: none;
+	color:#fff;
+	padding: 15px 0;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 35px;
+	margin: 4px;
+	cursor: pointer;
+}
+
+
+
+/* 여기까지 기부하기 화면 CSS */
+
+
+
+
+
+.six-four{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.arrow-width{
+	margin: 10px 10px;
+	width: 80px;
+}
+
+.carousel-control-next{
+	height: 95%;
+	position: relative;
+	/* 대신 살짝 투명하게 겹치는 듯한 느낌으로 좌우 버튼을 설정해보겠습니다  */
+	background-color: rgba(0, 0, 0, 0.30);
+}
+
+.carousel-control-prev{
+	height: 95%;
+	position: relative;
+	/* 대신 살짝 투명하게 겹치는 듯한 느낌으로 좌우 버튼을 설정해보겠습니다  */
+	background-color: rgba(0, 0, 0, 0.30);
+
+}
+
+.arrow-border{
+	z-index: 0;
+}
+
+.phone-container{
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.number-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 10px;
+}
+
+.number-line{
+	display: flex;
+}
+
+/* .num{
+	margin: 10px 10px;
+	width: 5em;
+	height: 5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #000000;
+} */
+
+.num{
+	margin: 7px;
+	width: 65px;
+	height: 65px;
+
+	color: #34383c;
+	background-color: #f5b601;
+
+    /* font-size: 2.5em; */
+	font-weight: 500;
+	font-size: 45px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 2%;
+}
+
+.number-line .keypad {
+    font-size: 20px;
+}
+
+.phone-number-wrapper{
+    height: 15%;
+
+	font-size: 60px;
+
+	border-bottom: solid 1px gray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-number {
+    height: 40%;
+    /* background-color: #84BD00; */
+}
+
+#phone-alert{
+	font-size: 1.3em;
+	color: red;
+	margin-bottom: 10px;
+}
+
+.void{
+	display: none;
+}
+
+.unvoid{
+	display: flex;
+	justify-content: center;
+}
+
+.bookmark{
+	width: 49%;
+	height: 24%;
+
+	margin: 3px;
+	/* background-color: #eff2f8; */
+	background-color: white;
+
+	display: grid;
+	grid-template-rows: repeat(12, 1fr);
+	grid-template-columns: repeat(12, 1fr);        
+	
+}
+.bookmark-photo{
+	grid-row: 1 / 11;
+	grid-column: 1 / 5;
+	
+	overflow: hidden;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	/* background-color: #23417c; */
+	/* border: 1px #000000 solid; */
+	border-radius: 20px;
+	padding: 27px 9px 9px;
+	/* margin-bottom: 5px; */
+}
+.bookmark-title{
+	padding-left: 5px;
+	grid-row: 1 / 4;
+	grid-column: 5 / 11;
+	/* background-color: #7c2370; */
+	
+	display: flex;
+	align-items: flex-end;
+	
+	font-size: 25px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.bookmark-title-small{
+	font-size: 20px !important;
+	font-weight: 700;
+}
+
+.bookmark-badge{
+	grid-row: 1 / 4;
+	grid-column: 11 / 13;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color:salmon;
+	font-size: smaller;
+	/* background-color: #7c2323; */
+}
+.bookmark-dividing{
+	grid-row: 4 / 5;
+	grid-column: 5 / 13;
+
+	display: flex;
+	align-self: center;
+	
+	height: 1px;
+
+	margin-left: 5px;
+	margin-right: 5px;
+
+	background-color: slategrey;
+
+	background-clip: content-box;
+}
+
+.bookmark-detail{
+	grid-row: 5 / 11;
+	grid-column: 5 / 10;
+	padding-left: 5px;
+	padding-bottom: 9px;
+	
+	/* background-color: #7c7623; */
+	
+	font-size: 12px;
+	font-weight: 200;
+	color: #000000;
+}
+
+.bookmark-btn1{
+	grid-row: 5 / 11;
+	grid-column: 10 / 13;
+	
+	margin: 10px;
+	border-radius: 7px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	text-align: center;
+
+	background-color: #f5b601;
+	vertical-align: middle;
+	/* background-clip: content-box; */
+}
+
+.bookmark-contribution{
+	grid-row: 11 / 13;
+	grid-column: 4 / 13;
+	padding-left: 5px;
+	
+	display: flex;
+	align-items: flex-start;
+	
+	/* background-color: #7c234c; */
+	/* font-size: 20px;
+	font-weight: 700; */
+	color: #000000;
+}
+
+.bookmark-contribution-title{
+	grid-row: 11 / 13;
+	grid-column: 1 / 4;
+	
+	padding-left: 9px;
+
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	
+	/* background-color: #7c7623; */
+	font-size: 15px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.bookmark:hover{
+	cursor: pointer;
+}
+
+.bookmark-image-layout{
+	/* radius 20px, color #eff2f8  size 50px*/
+	/* 세로 가운데 배치 */
+	display: flex;
+	align-items: center;
+			width: 80%;
+			height: 50%;
+	background-color: #eff2f8;
+	border: 1px #000000 solid;
+	border-radius: 20px;
+	padding: 9px;
+	margin-bottom: 5px;
+}
+
+.bookmark-image{
+	/* size 28px */
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 1px #eff2f8 solid;
+			border-radius: 7px;
+			background-color: rgba(188, 143, 143, 0.568);
+
+}
+
+/* 여기까지가 메뉴 화면 관련된 CSS 입니다. */
+
+/* 여기는 장바구니 관련 CSS가 모여 있습니다 */
+
+.cart-container{
+	height: 100%;
+	width: 30%;
+	padding: 20px;
+}
+
+.cart-inner{
+	height: 100%;
+	width: 100%;
+
+	/* border: black;
+	border-style: solid;
+	border-width: 1.5px; */
+
+	background-color: white;
+	box-shadow: 10px 10px 30px #0008084f;
+
+	display: grid;
+	grid-template-rows: 2fr 6fr 2fr 2fr 1fr;
+	grid-template-columns: 1fr 6fr 1fr;
+
+}
+
+.cart-title{
+	grid-row: 1 / 2;
+	grid-column: 2 / 3;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 30px;
+
+}
+.cart-body{
+	/* 전체 장바구니 구역에서 이 div가 차지하는 공간입니다. */
+	grid-row: 2 / 3;
+	grid-column: 2 / 3;
+
+	border-color: rgba(47, 79, 79, 0.6);
+	border-top-style: solid;
+	border-top-width: 1px;
+
+	/* padding: 3% 0%; */
+
+	/* 이 div 내에는 개별 주문내역들이 쌓일 예정입니다.
+		 몇 개의 요소가 들어올지 가변적이므로, grid가 아닌 flex로 처리할게요. */
+	display: flex;
+	/* 장바구니에 들어온 아이템들은 메인축을 수직으로 쌓고요 */
+	flex-direction: column;
+	/* 맨 위부터 차례로 쌓일 예정이므로 메인축 시작지점부터 쌓기 */
+	justify-content: flex-start;
+	/* 수직축-여기에서는 수평축 좌우로 stretch 처리 */
+	align-items: center;
+
+	/* 아이템이 목록 갯수를 넘어가면 스크롤로 처리하겠습니다! */
+	overflow: auto;
+
+}
+.cart-item{
+	width: 100%;
+	height: 8.5vh !important;
+	padding: 1% 0%;
+	/* background-color: rgba(210, 105, 30, 0.322); */
+
+	border-bottom: rgba(47, 79, 79, 0.3) solid 1px;
+
+	display: grid;
+	grid-template-rows: 11fr 10fr;
+	grid-template-columns: 2fr 7fr 3fr;
+}
+
+.cart-item-available{
+	grid-row: 1 / 3 ;
+	grid-column: 1 / 2 ;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cart-item-title{
+	grid-row: 1 / 2 ;
+	grid-column: 2 / 3 ;
+
+	padding-left: 10px;
+
+	display: flex;
+	align-items: flex-end;
+
+	font-size: 16px;
+}
+.cart-item-cost{
+	grid-row: 2 / 3;
+	grid-column: 2 / 3;
+
+	padding-left: 10px;
+
+	display: flex;
+	align-items: flex-start;
+
+	font-size: 12px;
+
+}
+.cart-item-quantity{
+	grid-row: 1 / 3;
+	grid-column: 3 / 4;
+
+	margin: 10% 5%;
+
+	font-size: 16px;
+	font-weight: 900;
+
+	/* 내부에 더하기빼기를 구현해봅니다 */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	/* 칸처럼 보이도록 모양도 예쁘게 잡아볼게요 */
+	background-color: rgb(202, 202, 202);
+	border-radius: 10%;
+	border-width: 5px;
+	border-style: solid;
+	border-color:rgb(202, 202, 202);
+}
+.cart-item-quantity-btn{
+	height: 100%;
+	width: 30%;
+			
+	background-color: white;
+	border-radius: 10%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.money-box{
+	grid-row: 3 / 4;
+	grid-column: 2 / 3;
+
+	border-top: rgba(47, 79, 79, 0.3) solid 1px;
+
+	padding: 0% 10%;
+}
+
+.money-box-item{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+	
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.button-container{
+	grid-row : 4 / 5;
+	grid-column: 2 / 3;
+
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+}
+
+.button-reset{
+	height: 95%;
+	width: 100%;
+	background-color: rgb(202, 202, 202);
+	border: none;
+	color:#fff;
+	padding: 15px 0;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 35px;
+	margin: 4px;
+	cursor: pointer;
+}
+
+.button-pay{
+	height: 95%;
+	width: 100%;
+	background-color: #f5b601;
+	border: none;
+	color:#fff;
+	padding: 15px 0;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 35px;
+	margin: 4px;
+	cursor: pointer;
+}
+
+/* 여기까지가 장바구니 관련된 CSS 입니다. */
+
+/* 여기는 기부하기 화면 CSS 입니다 */
+.donation-container{
+	width: 70%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.donation-wrapper {
+    width: 100%;
+    /* 장바구니와 같은 선으로 맞춰줍니다 */
+    height: 100%;
+    padding: 20px;
+
+
+	display: grid;
+
+	grid-template-rows: 2fr 1fr 3fr;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+.donation-items {
+    height: 100%;
+    width: 100%;
+
+    grid-row: 3 / 4;
+    grid-column: 2 / 8;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.donation-bookmark{
+    /* 전체 카루젤 대비 이전 화면의 각 메뉴 크기에 거의 근접하도록 맞춰 설정했습니다 */
+	width: 78%;
+	height: 49%;
+
+    background-color: white;
+    box-shadow: 3px 3px 5px #0008084f;
+
+
+	display: grid;
+	grid-template-rows: repeat(12, 1fr);
+	grid-template-columns: repeat(12, 1fr);
+}
+
+.donation-bookmark .bookmark-btn1{
+	background-color: #84BD00;
+}
+
+.donation-explain {
+    height: 100%;
+    width: 100%;
+
+    grid-row: 1 / 2;
+    grid-column: 2 / 12;
+
+    border-bottom: gray solid 1px;
+}
+
+.donation-phone {
+    height: 100%;
+    width: 100%;
+
+    grid-row: 2 / 3;
+    grid-column: 2 / 12;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    line-height: 22px;
+
+}
+
+.donation-phone p {
+    margin: 0;
+}
+
+
+.donation-phone input {
+     padding: 15px;
+     width: 100%;
+
+     text-align: center;
+
+     font-size: 16px;
+     border-width: 5px;
+     border-color: #f5b601;
+     background-color: #FFFFFF;
+     color: #000000;
+     border-style: solid;
+     border-radius: 50px;
+     box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+     text-shadow: 0px 0px 5px rgba(66,66,66,.0);
+}
+.donation-phone input:focus {
+    outline:none;
+}
+.donation-phone input::placeholder {
+    text-align: center;
+}
+
+.donation-others {
+    height: 100%;
+    width: 100%;
+
+    grid-row: 3 / 4;
+    grid-column: 8 / 12;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donation-button {
+	height: 250px;
+	width: 250px;
+	border-radius: 125px;
+
+	background-color: #84BD00;
+
+	border: none;
+	color:#fff;
+	padding: 15px 0;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 35px;
+	margin: 4px;
+	cursor: pointer;
+}
+
+
+
+/* 여기까지 기부하기 화면 CSS */
+
+
+
+
+
+.six-four{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.arrow-width{
+	margin: 10px 10px;
+	width: 80px;
+}
+
+.carousel-control-next{
+	height: 95%;
+	position: relative;
+	/* 대신 살짝 투명하게 겹치는 듯한 느낌으로 좌우 버튼을 설정해보겠습니다  */
+	background-color: rgba(0, 0, 0, 0.30);
+}
+
+.carousel-control-prev{
+	height: 95%;
+	position: relative;
+	/* 대신 살짝 투명하게 겹치는 듯한 느낌으로 좌우 버튼을 설정해보겠습니다  */
+	background-color: rgba(0, 0, 0, 0.30);
+
+}
+
+.arrow-border{
+	z-index: 0;
+}
+
+.phone-container{
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.number-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 10px;
+}
+
+.number-line{
+	display: flex;
+}
+
+/* .num{
+	margin: 10px 10px;
+	width: 5em;
+	height: 5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #000000;
+} */
+
+.num{
+	margin: 7px;
+	width: 65px;
+	height: 65px;
+
+	color: #34383c;
+	background-color: #f5b601;
+
+    /* font-size: 2.5em; */
+	font-weight: 500;
+	font-size: 45px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 2%;
+}
+
+.number-line .keypad {
+    font-size: 20px;
+}
+
+.phone-number-wrapper{
+    height: 15%;
+
+	font-size: 60px;
+
+	border-bottom: solid 1px gray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-number {
+    height: 40%;
+    /* background-color: #84BD00; */
+}
+
+
+#phone-alert{
+	font-size: 1.3em;
+	color: red;
+	margin-bottom: 10px;
+}
+
+.void{
+	display: none;
+}
+
+.unvoid{
+	display: flex;
+	justify-content: center;
+}

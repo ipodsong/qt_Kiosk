@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="qrc:///qtwebchannel/qwebchannel.js"></script>
+    <link rel="stylesheet" href="assets/css/complete.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="completeContainer">
+        <div class="complete-header">결제가 완료되었습니다!</div>
+        <div class="complete-body">
+            <div class="completeOrderContainer">
+                <div class="complete-ordernum">
+                    <div class="ordernum-header">주문번호</div>
+                    <div id="order-num" class="ordernum-body">0</div>
+                    <div class="count-container">
+                        <div id="count">0</div>
+                        <div>초 후 시작페이지로 이동합니다.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="completeMessageContainer">
+                <div class="completeMessageBox">
+                    <img src="assets/pic/widgetComplete.png" style="width: 100%;">
+                    <div class="completeMessage">
+                        <p id="msg">방문해주셔서<br>감사합니다,<br>맛있게 드세요!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/js/widgetComplete.js"></script>
+</body>
+</html>

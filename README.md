@@ -5,6 +5,10 @@
 
 ## 0. Why React?
 
+> 이부분은 조금 더 정리를 해봐야할듯
+
+0. 그냥 리액트해보고 싶어서 하자고 한건데
+
 1. React는 JSX = JavaScript XML, Vue는 Template
    1. `const example=<h1>This is Example</h1>`
    2. 같은 페이지이지만 사용자에 따라 조금은 다른 화면을 출력해야한다.

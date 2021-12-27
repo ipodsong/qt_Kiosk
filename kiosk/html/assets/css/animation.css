@@ -1,0 +1,64 @@
+.grow {
+    animation: btnExpand 2s linear 1;
+  }
+  
+  .hide-all {
+    animation: hideAll 1s linear 1;
+  }
+
+.fade-in{
+	animation: animate-fadein 1s linear 1;
+}
+
+.fade-out{
+	animation: animate-fadeout 1s linear 1;
+}
+
+.opazero{
+	opacity: 0;
+}
+
+.opaone{
+	opacity: 1;
+}
+
+@keyframes btnExpand {
+    100% {
+      line-height: 9200px; 
+      width: 9999px;
+      height: 9999px;
+      border-radius: 9999px;
+      color: transparent;
+    }
+    100% {
+      line-height: 9200px; 
+      width: 9999px;
+      height: 9999px;
+      border-radius: 9999px;
+      color: transparent;
+    }
+  }
+  
+  @keyframes hideAll {
+    100% {
+      opacity: 0;
+    }
+  }
+
+@keyframes animate-fadeout {
+	0% {
+			opacity: 1;
+	}
+	100% {
+			opacity: 0;	
+	}
+}
+
+@keyframes animate-fadein {
+	0% {
+			opacity: 0;
+	}
+	100% {
+			opacity: 1;	
+	}
+}

@@ -1,0 +1,192 @@
+html, body{
+	position: relative;
+	width: 98%;
+	height: 98%;
+    background-color: rgba(0, 0, 0, 0.013);
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-main{
+    width: 100%;
+    height: 100%;
+}
+
+.payment-wrapper {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.purchase-container {
+    width: 100%;
+    height: 100%;
+
+    padding-right: 10px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.payment-card {
+    width: 90%;
+    height: 90%;
+
+    background-color: white;
+  	box-shadow: 10px 10px 30px #0008084f;
+
+  	display: grid;
+	grid-template-rows: 2fr 8fr 2fr 1fr;
+	grid-template-columns: 1fr 6fr 1fr;
+}
+
+.payment-card-title {
+	grid-row: 1 / 2;
+	grid-column: 2 / 3;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 30px;
+
+	border-color: rgba(47, 79, 79, 0.6);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+
+}
+
+.purchase-card-body {
+	grid-row: 2 / 3;
+	grid-column: 2 / 3;
+
+    /* 이 div 내에는 개별 주문내역들이 쌓일 예정입니다.
+     몇 개의 요소가 들어올지 가변적이므로, grid가 아닌 flex로 처리할게요. */
+	display: flex;
+	/* 장바구니에 들어온 아이템들은 메인축을 수직으로 쌓고요 */
+	flex-direction: column;
+	/* 맨 위부터 차례로 쌓일 예정이므로 메인축 시작지점부터 쌓기 */
+	justify-content: flex-start;
+	/* 수직축-여기에서는 수평축 좌우로 stretch 처리 */
+	align-items: center;
+
+	/* 아이템이 목록 갯수를 넘어가면 스크롤로 처리하겠습니다! */
+	overflow: auto;
+}
+
+.purchase-item{
+	width: 100%;
+	height: 8.5vh !important;
+	padding: 1% 0%;
+	/* background-color: rgba(210, 105, 30, 0.322); */
+
+	border-bottom: rgba(47, 79, 79, 0.3) solid 1px;
+
+	font-size: 16px;
+
+
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 5fr 2fr 3fr 1fr;
+}
+
+.purchase-item-title {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.purchase-item-quantity {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.purchase-item-cost {
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.purchase-result {
+	grid-row: 3 / 4;
+	grid-column: 2 / 3;
+
+	font-size: 16px;
+	font-weight: 600;
+
+	border-top: rgba(47, 79, 79, 0.3) solid 1px;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+
+.payment-card-body {
+	grid-row: 2 / 4;
+	grid-column: 2 / 3;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.payment-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-left: 10px;
+}
+
+.pay-button{
+    width: 80%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+
+    /* border: 1px #000 solid;
+    margin: 10px 10px;
+    padding: 20px; */
+}
+
+.button-img{
+    width: 60%;
+    height: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.kakaopayIcon{
+    background-image: url(../pic/payment_icon_yellow_large.png);
+}
+
+.cardIcon{
+    background-image: url(../pic/card-1673581_640.png);
+}
